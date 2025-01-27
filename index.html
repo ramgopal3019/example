@@ -69,12 +69,18 @@
         .message a {
             color: #5cb85c;
             text-decoration: none;
+            cursor: pointer; /* Change cursor to pointer */
         }
 
         .message a:hover {
             text-decoration: underline;
         }
     </style>
+    <script>
+        function showPopup() {
+            alert("This feature is not yet implemented. Please register later.");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -89,7 +95,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+            <p class="message">Not registered? <a href="#" onclick="showPopup()">Create an account</a></p>
         </form>
     </div>
 </body>
